@@ -51,8 +51,8 @@ export function ProjectsSection() {
           title={locale === "vi" ? "Dự án nổi bật" : "Selected work"}
           description={
             locale === "vi"
-              ? "Một vài sản phẩm tôi đã xây dựng — thật hoặc sắp thật. (Dữ liệu mẫu, sẽ cập nhật.)"
-              : "A few things I've built or am building. (Placeholder data, to be updated.)"
+              ? "Một vài sản phẩm tôi đã xây dựng — thật hoặc sắp thật."
+              : "A few things I've built or am building."
           }
         />
 

@@ -151,76 +151,98 @@ export const skillCategoryMeta: Record<
 
 export const projects: Project[] = [
   {
-    slug: "golfplatform",
-    title: "GolfPlatform",
+    slug: "golf_platform",
+    title: "Golf Platform",
     summary: {
-      vi: "Nền tảng học trực tuyến với live streaming và quiz realtime.",
-      en: "Online learning platform with live streaming and realtime quizzes.",
+      vi: "Hệ thống quản lý toàn diện cho sân golf.",
+      en: "A comprehensive management system for golf courses.",
     },
     description: {
-      vi: "Hệ thống LMS phục vụ 10k+ học viên đồng thời. Xử lý livestream qua WebRTC, bài kiểm tra realtime, hệ thống thanh toán tích hợp VNPay và MoMo, bảng điều khiển phân tích tiến độ học tập.",
-      en: "LMS serving 10k+ concurrent learners. WebRTC livestreaming, realtime quizzes, VNPay & MoMo payment integration, and a teacher analytics dashboard.",
+      vi: "Hệ thống CMS quản lý sân golf, được nhiều hệ thống golf lớn đang sử dụng như sân Chí Linh, Sam Tuyền Lâm, Hệ thống sân của Vinpearl và nhiều sân khác. " +
+          "Booking đặt lịch, GO điều hành flight, caddie, buggy, voucher, tích hợp thanh toán xuất hoá đơn...",
+      en: "CMS golf course management system, used by many large golf chains such as Chi Linh Golf Course, Sam Tuyen Lam Golf Course, Vinpearl Golf Courses and many others. " +
+          "Features include scheduling, flight operation, caddie and buggy management, voucher management, integrated payment and order processing, etc.",
     },
-    tags: ["Next.js", "Golang", "PostgreSQL", "WebRTC", "Redis"],
-    role: { vi: "Tech Lead", en: "Tech Lead" },
-    year: "2024",
-    status: "shipped",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/huyphuong1994",
-    featured: true,
-  },
-  {
-    slug: "taskflow",
-    title: "TaskFlow",
-    summary: {
-      vi: "Công cụ quản lý dự án Agile với collaboration realtime.",
-      en: "Agile project management tool with realtime collaboration.",
-    },
-    description: {
-      vi: "Jira-alike cho team Việt: kanban, sprint planning, burndown chart, realtime cursor, bình luận nội tuyến. Hỗ trợ 200+ team đang sử dụng production.",
-      en: "Jira-alike built for Vietnamese teams: kanban, sprint planning, burndown charts, realtime cursors and inline comments. 200+ teams in production.",
-    },
-    tags: ["Vue.js", "Laravel", "MySQL", "WebSocket", "Redis"],
+    tags: ["React.js", "Golang", "MySQL", "Redis", "Docker"],
     role: { vi: "Full-stack Developer", en: "Full-stack Developer" },
-    year: "2023",
+    year: "2022",
     status: "shipped",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/huyphuong1994",
+    liveUrl: "https://vngolf-portal.vnpay.vn",
+    githubUrl: "",
     featured: true,
   },
   {
-    slug: "ai-chatbot",
-    title: "AI Customer Chatbot",
+    slug: "my_wedding",
+    title: "My Wedding",
     summary: {
-      vi: "Chatbot AI đa lượt cho chăm sóc khách hàng, hiểu ngữ cảnh tiếng Việt.",
-      en: "Multi-turn AI chatbot for customer support with Vietnamese context awareness.",
+      vi: "Thiệp mời cưới online.",
+      en: "Online wedding invitations.",
     },
     description: {
-      vi: "Tích hợp OpenAI + RAG với dữ liệu nội bộ của khách hàng. Giảm 70% ticket level-1, hỗ trợ 24/7, chuyển giao cho con người khi cần.",
-      en: "OpenAI + RAG over customer's internal docs. Reduced level-1 tickets by 70%, supports 24/7 with smooth human handoff.",
+      vi: "Bắt nguồn từ chính đám cưới của bản thân đã tạo ra web https://wedding-hp-ma.vercel.app để mới cưới, " +
+          "tôi đang thực hiện một app cho người khác có thể tự tạo thiệp mời cưới online cho họ.",
+      en: "Inspired by my own wedding, which led to the creation of the website https://wedding-hp-ma.vercel.app, I am now developing an app that allows others to create their own online wedding invitations.",
     },
-    tags: ["Python", "FastAPI", "OpenAI", "LangChain", "pgvector"],
+    tags: ["Vue.js", "Next.js", "MySQL", "Golang"],
     role: { vi: "Solo Developer", en: "Solo Developer" },
     year: "2024",
+    status: "in-progress",
+    liveUrl: "https://wixio-fe.vercel.app",
+    githubUrl: "https://github.com/huyphuong1994",
+    featured: true,
+  },
+  {
+    slug: "grid_bot",
+    title: "Grid Bot Trading",
+    summary: {
+      vi: "Một bot giao dịch tự động dạng lưới.",
+      en: "An automated grid trading bot.",
+    },
+    description: {
+      vi: "Ứng dụng desktop Bot tự động giao dịch dạng lưới khi thị trường đi ngang ít biến động, có tích hợp AI phân tích thị trường.",
+      en: "The Bot desktop application automatically trades in a grid pattern when the market is sideways with low volatility, and it integrates AI for market analysis.",
+    },
+    tags: ["Python", "Electron.js", "sqlite", "OpenAI"],
+    role: { vi: "Solo Developer", en: "Solo Developer" },
+    year: "2026",
+    status: "shipped",
+    githubUrl: "",
+    featured: true,
+  },
+  {
+    slug: "all",
+    title: "Other",
+    summary: {
+      vi: "Quá trình làm việc đã làm rất nhiều dự án của công ty và freelancer.",
+      en: "During my career, I've worked on numerous projects for both the company and as a freelancer.",
+    },
+    description: {
+      vi: "Sau hơn 8 năm làm nghê, đã làm rất nhiều dự án lớn nhỏ khác như: dự án quản lý đại lý phân phối xe cho khách hàng nhật," +
+          "dự án quản lý đơn hàng tập trung của VCcorp, dự án cho thuê xe oto... Và nhiều dự án khác.",
+      en: "After more than 8 years in the profession, I have worked on many large and small projects such as: a project managing car dealerships for Japanese customers, a centralized order management project for VCorp, a car rental project... and many other projects.",
+    },
+    tags: ["Laravel", "Golang", "Vuejs", "Nuxt.js", "Kafka", "Kubernetes", "PostgreSQL"],
+    role: { vi: "Full-stack Developer", en: "Full-stack Developer" },
+    year: "2018-2026",
     status: "shipped",
     githubUrl: "https://github.com/huyphuong1994",
     featured: true,
   },
   {
-    slug: "microshop",
-    title: "MicroShop",
+    slug: "ai-translation",
+    title: "AI Sub Video",
     summary: {
-      vi: "Hệ thống e-commerce microservices high-availability.",
-      en: "High-availability e-commerce platform built on microservices.",
+      vi: "Một AI agent tự động thêm phụ đề và lồng tiếng cho video chuẩn netflix.",
+      en: "An AI agent automatically adds subtitles and voiceovers to Netflix-standard videos.",
     },
     description: {
-      vi: "8 microservices Golang giao tiếp qua Kafka. Kubernetes trên GCP, CI/CD tự động, hỗ trợ 1 triệu đơn/tháng vào dịp sale đỉnh.",
-      en: "8 Go microservices communicating via Kafka. Kubernetes on GCP, fully automated CI/CD, handles 1M orders/month at peak sale.",
+      vi: "Một AI agent tự động thêm phụ đề và lồng tiếng cho video chuẩn netflix.",
+      en: "An AI agent automatically adds subtitles and voiceovers to Netflix-standard videos.",
     },
-    tags: ["Golang", "Nuxt.js", "Kafka", "Kubernetes", "PostgreSQL"],
-    role: { vi: "Backend Lead", en: "Backend Lead" },
-    year: "2023",
-    status: "shipped",
+    tags: ["Python", "AI", "Docker"],
+    role: { vi: "Solo Developer", en: "Solo Developer" },
+    year: "2026",
+    status: "in-progress",
     githubUrl: "https://github.com/huyphuong1994",
     featured: false,
   },
@@ -269,16 +291,16 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     hash: "a1b2c3d",
-    company: "Tech Company XYZ",
+    company: "Công ty cổ phần giải pháp công nghệ Caro",
     role: {
       vi: "Senior Full-stack Developer",
       en: "Senior Full-stack Developer",
     },
-    period: "2023 — Present",
+    period: "2022 — Present",
     highlights: [
       {
-        vi: "Dẫn dắt team 5 người xây dựng nền tảng LMS phục vụ 10k+ học viên đồng thời.",
-        en: "Led a team of 5 to build an LMS serving 10k+ concurrent learners.",
+        vi: "Key member xây dựng nền tảng quản lý sân golf của VNPAY phục vụ các hệ thông sân golf lớn.",
+        en: "Key members built VNPAY's golf course management platform to serve large golf course systems.",
       },
       {
         vi: "Thiết kế kiến trúc microservices Golang + Kafka, giảm 40% thời gian xử lý.",
@@ -289,13 +311,13 @@ export const experiences: Experience[] = [
         en: "Integrated AI into the code review workflow, saving ~8h/dev/week.",
       },
     ],
-    stack: ["Golang", "Next.js", "PostgreSQL", "Kafka", "Kubernetes"],
+    stack: ["Golang", "React.js", "MySql", "Kafka", "Kubernetes"],
   },
   {
     hash: "e4f5g6h",
-    company: "ABC Solutions",
+    company: "Công ty cổ phần VCCorp",
     role: { vi: "Full-stack Developer", en: "Full-stack Developer" },
-    period: "2020 — 2023",
+    period: "2020 — 2022",
     highlights: [
       {
         vi: "Xây dựng và bảo trì nền tảng e-commerce B2B với 1M+ SKU.",
@@ -314,7 +336,7 @@ export const experiences: Experience[] = [
   },
   {
     hash: "i7j8k9l",
-    company: "StartupDev Co.",
+    company: "Công ty TNHH công nghệ PADITECH Việt Nam",
     role: { vi: "Junior Web Developer", en: "Junior Web Developer" },
     period: "2018 — 2020",
     highlights: [
