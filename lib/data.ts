@@ -85,22 +85,22 @@ export const heroStats: HeroStat[] = [
 
 export const skills: Skill[] = [
   // Backend
-  { name: "Python", category: "backend", level: 92, years: 6 },
-  { name: "Golang", category: "backend", level: 85, years: 3 },
-  { name: "PHP / Laravel", category: "backend", level: 90, years: 5 },
-  { name: "Node.js", category: "backend", level: 80, years: 4 },
-  { name: "FastAPI", category: "backend", level: 88, years: 3 },
+  { name: "Python", category: "backend", level: 85, years: 2 },
+  { name: "Golang", category: "backend", level: 90, years: 4 },
+  { name: "PHP / Laravel", category: "backend", level: 92, years: 7 },
+  { name: "Node.js", category: "backend", level: 80, years: 2 },
+  // { name: "FastAPI", category: "backend", level: 88, years: 3 },
 
   // Frontend
   { name: "Next.js", category: "frontend", level: 92, years: 4 },
   { name: "React", category: "frontend", level: 90, years: 5 },
-  { name: "Vue.js", category: "frontend", level: 88, years: 5 },
-  { name: "Nuxt.js", category: "frontend", level: 82, years: 3 },
-  { name: "TypeScript", category: "frontend", level: 90, years: 5 },
+  { name: "Vue.js", category: "frontend", level: 92, years: 7 },
+  { name: "Nuxt.js", category: "frontend", level: 82, years: 5 },
+  { name: "TypeScript", category: "frontend", level: 90, years: 7 },
   { name: "Tailwind CSS", category: "frontend", level: 94, years: 4 },
 
   // Database
-  { name: "PostgreSQL", category: "database", level: 88, years: 6 },
+  { name: "PostgreSQL", category: "database", level: 88, years: 1 },
   { name: "MySQL", category: "database", level: 90, years: 7 },
   { name: "Redis", category: "database", level: 82, years: 4 },
   { name: "MongoDB", category: "database", level: 78, years: 3 },
@@ -113,7 +113,7 @@ export const skills: Skill[] = [
 
   // AI
   { name: "OpenAI API", category: "ai", level: 92, years: 2 },
-  { name: "LangChain", category: "ai", level: 80, years: 2 },
+  { name: "Antigravity", category: "ai", level: 80, years: 2 },
   { name: "Claude / Cursor", category: "ai", level: 95, years: 2 },
   { name: "Prompt Engineering", category: "ai", level: 90, years: 2 },
 ];
@@ -151,8 +151,8 @@ export const skillCategoryMeta: Record<
 
 export const projects: Project[] = [
   {
-    slug: "eduplatform",
-    title: "EduPlatform",
+    slug: "golfplatform",
+    title: "GolfPlatform",
     summary: {
       vi: "Nền tảng học trực tuyến với live streaming và quiz realtime.",
       en: "Online learning platform with live streaming and realtime quizzes.",
