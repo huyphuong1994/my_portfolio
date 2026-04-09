@@ -25,8 +25,8 @@ export function ExperienceSection() {
           title={locale === "vi" ? "Kinh nghiệm" : "Work history"}
           description={
             locale === "vi"
-              ? "Hành trình nghề nghiệp của tôi — đọc như git log. (Dữ liệu mẫu, sẽ cập nhật.)"
-              : "My career, laid out like a git log. (Placeholder data, to be updated.)"
+              ? "Hành trình nghề nghiệp của tôi — đọc như git log."
+              : "My career, laid out like a git log."
           }
         />
 
