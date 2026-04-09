@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/huyph/.claude/**)",
+      "Read(//c/Users/huyph/.claude/plugins/**)",
+      "Bash(python -m scripts.aggregate_benchmark \"/c/Users/huyph/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/skills/nextjs-portfolio-workspace/iteration-1\" --skill-name \"nextjs-portfolio\")",
+      "Bash(python scripts/aggregate_benchmark.py /c/Users/huyph/.claude/plugins/cache/claude-plugins-official/skill-creator/unknown/skills/nextjs-portfolio-workspace/iteration-1 --skill-name nextjs-portfolio)",
+      "Bash(nohup python:*)",
+      "Read(//tmp/**)",
+      "Bash(python:*)",
+      "Bash(start \"\" \"C:/Users/huyph/Desktop/nextjs-portfolio-review.html\")",
+      "Bash(npm install:*)",
+      "Bash(npx next:*)",
+      "Bash(node:*)"
+    ]
+  }
+}
