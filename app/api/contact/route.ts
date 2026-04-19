@@ -1,13 +1,13 @@
 /**
  * Route Handler: POST /api/contact
  *
- * Receives the contact form payload, validates shape, and logs it
- * server-side. Replace the `console.log` with your preferred email
- * provider (Resend, Nodemailer, etc.) when ready.
+ * Validates the contact form payload, then forwards it to the
+ * configured Discord webhook.
  */
 
 import { NextResponse } from "next/server";
 import type { ContactPayload } from "@/types";
+import { sendDiscordNotification } from "@/lib/notifications";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_RE = /^(?:\+?\d[\d\s().-]{7,18}\d)$/;
@@ -57,14 +57,12 @@ export async function POST(request: Request) {
     );
   }
 
-  // TODO: wire up a real email provider (Resend, SendGrid, SMTP, etc.)
-  //       For now we just log it so the user can verify end-to-end flow.
-  console.log("[contact]", {
+  await sendDiscordNotification({
     name,
     phone,
-    email: email || null,
+    email: email || undefined,
     message,
-    at: new Date().toISOString(),
+    receivedAt: new Date().toISOString(),
   });
 
   return NextResponse.json({ ok: true });
