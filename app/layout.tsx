@@ -19,9 +19,9 @@ const jetbrains = JetBrains_Mono({
 
 const SITE_NAME = "Đào Huy Phương — Full-stack Developer & Freelancer";
 const SITE_TITLE =
-  "Đào Huy Phương · Full-stack Developer Freelancer · Nhận làm Website & Phần mềm";
+  "Đào Huy Phương · Full-stack Developer Freelancer Việt Nam";
 const SITE_DESCRIPTION =
-  "Đào Huy Phương — Full-stack Developer freelance tại Việt Nam, 7+ năm kinh nghiệm. Nhận thiết kế và phát triển website, phần mềm, app, hệ thống quản trị, tích hợp AI cho doanh nghiệp và cá nhân. Stack: Next.js, React, Vue, Golang, Laravel, Python.";
+  "Full-stack Developer freelance, 7+ năm kinh nghiệm. Nhận làm website, phần mềm, tích hợp AI. Next.js, React, Golang, Laravel. Liên hệ báo giá ngay.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -105,6 +105,7 @@ export const metadata: Metadata = {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     creator: "@Huyphuong94",
+    images: [`${SITE_URL}/opengraph-image`],
   },
   robots: {
     index: true,

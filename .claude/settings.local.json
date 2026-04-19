@@ -13,7 +13,9 @@
       "Bash(npx next:*)",
       "Bash(node:*)",
       "Bash(npx tsc *)",
-      "Bash(./node_modules/.bin/tsc --noEmit)"
+      "Bash(./node_modules/.bin/tsc --noEmit)",
+      "Bash(git checkout *)",
+      "Bash(git revert *)"
     ]
   }
 }

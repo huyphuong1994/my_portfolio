@@ -140,7 +140,10 @@ export function HeroSection() {
             transition={{ delay: 0.15, duration: 0.6 }}
             className="mb-3 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            <span className="mr-3 text-[var(--color-term-green)] glow-green">
+            <span
+              aria-hidden="true"
+              className="mr-3 text-[var(--color-term-green)] glow-green"
+            >
               &gt;
             </span>
             <span className="text-[var(--color-fg)]">
@@ -150,7 +153,11 @@ export function HeroSection() {
             <span className="text-[var(--color-fg)]">
               {personal.name.split(" ").slice(2).join(" ")}
             </span>
-            <span className="ml-2 text-[var(--color-term-green)]">.</span>
+            <span aria-hidden="true" className="ml-2 text-[var(--color-term-green)]">.</span>
+            {/* SEO: keyword-rich suffix — hidden visually, read by bots and screen readers */}
+            <span className="sr-only">
+              {" "}— Full-stack Developer Freelancer Việt Nam · Nhận làm website, phần mềm & tích hợp AI
+            </span>
           </motion.h1>
 
           {/* Typed role — changes every few seconds */}
