@@ -10,6 +10,7 @@ import { NextResponse } from "next/server";
 import type { ContactPayload } from "@/types";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const PHONE_RE = /^(?:\+?\d[\d\s().-]{7,18}\d)$/;
 
 export async function POST(request: Request) {
   let body: Partial<ContactPayload>;
@@ -24,17 +25,25 @@ export async function POST(request: Request) {
   }
 
   const name = body.name?.trim();
+  const phone = body.phone?.trim();
   const email = body.email?.trim();
   const message = body.message?.trim();
 
-  if (!name || !email || !message) {
+  if (!name || !phone || !message) {
     return NextResponse.json(
-      { error: "All fields are required" },
+      { error: "Name, phone and message are required" },
       { status: 400 }
     );
   }
 
-  if (!EMAIL_RE.test(email)) {
+  if (!PHONE_RE.test(phone)) {
+    return NextResponse.json(
+      { error: "Invalid phone number" },
+      { status: 400 }
+    );
+  }
+
+  if (email && !EMAIL_RE.test(email)) {
     return NextResponse.json(
       { error: "Invalid email address" },
       { status: 400 }
@@ -52,7 +61,8 @@ export async function POST(request: Request) {
   //       For now we just log it so the user can verify end-to-end flow.
   console.log("[contact]", {
     name,
-    email,
+    phone,
+    email: email || null,
     message,
     at: new Date().toISOString(),
   });

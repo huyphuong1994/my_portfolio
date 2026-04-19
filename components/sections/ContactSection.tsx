@@ -9,7 +9,7 @@
 
 import { useState, type ComponentType, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Check, Mail, Send, AlertCircle } from "lucide-react";
+import { Check, Mail, Phone, Send, AlertCircle } from "lucide-react";
 import { GithubIcon } from "@/components/ui/BrandIcons";
 import { personal } from "@/lib/data";
 import { useLanguage } from "@/components/providers/LanguageProvider";
@@ -23,6 +23,7 @@ export function ContactSection() {
   const { locale } = useLanguage();
 
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<Status>("idle");
@@ -39,7 +40,7 @@ export function ContactSection() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, phone, email, message }),
       });
 
       const data = (await res.json()) as { error?: string };
@@ -50,6 +51,7 @@ export function ContactSection() {
 
       setStatus("success");
       setName("");
+      setPhone("");
       setEmail("");
       setMessage("");
     } catch (err) {
@@ -91,6 +93,10 @@ export function ContactSection() {
 
                 <InfoRow label="email" href={`mailto:${personal.email}`} Icon={Mail}>
                   {personal.email}
+                </InfoRow>
+
+                <InfoRow label="phone" href={`tel:${personal.phoneE164}`} Icon={Phone}>
+                  {personal.phone}
                 </InfoRow>
 
                 <InfoRow
@@ -171,12 +177,25 @@ export function ContactSection() {
                   required
                 />
                 <TerminalInput
+                  label="phone"
+                  type="tel"
+                  value={phone}
+                  onChange={setPhone}
+                  placeholder={
+                    locale === "vi" ? "Số điện thoại của bạn" : "Your phone number"
+                  }
+                  required
+                />
+                <TerminalInput
                   label="email"
                   type="email"
                   value={email}
                   onChange={setEmail}
-                  placeholder="you@example.com"
-                  required
+                  placeholder={
+                    locale === "vi"
+                      ? "you@example.com (tuỳ chọn)"
+                      : "you@example.com (optional)"
+                  }
                 />
                 <TerminalTextarea
                   label="message"
@@ -304,7 +323,7 @@ function TerminalInput({
   value: string;
   onChange: (v: string) => void;
   placeholder?: string;
-  type?: "text" | "email";
+  type?: "text" | "email" | "tel";
   required?: boolean;
 }) {
   return (

@@ -31,6 +31,8 @@ export const personal = {
     en: "Hanoi, Vietnam",
   } satisfies Bilingual,
   email: "huyphuongk57ktb@gmail.com",
+  phone: "0395765120",
+  phoneE164: "+84395765120",
   github: "https://github.com/huyphuong1994",
   githubHandle: "huyphuong1994",
   available: true,

@@ -79,6 +79,7 @@ export interface HeroStat {
 /** Payload posted to /api/contact. */
 export interface ContactPayload {
   name: string;
-  email: string;
+  phone: string;
+  email?: string;
   message: string;
 }

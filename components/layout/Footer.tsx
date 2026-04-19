@@ -5,7 +5,7 @@
  * Shows current status, github handle, and a cheeky "last build" timestamp.
  */
 
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { GithubIcon } from "@/components/ui/BrandIcons";
 import { personal } from "@/lib/data";
 import { useLanguage } from "@/components/providers/LanguageProvider";
@@ -53,6 +53,13 @@ export function Footer() {
               className="inline-flex items-center gap-2 text-sm text-[var(--color-fg-muted)] transition-colors hover:text-[var(--color-term-green)]"
             >
               <Mail size={14} /> {personal.email}
+            </a>
+            <br />
+            <a
+              href={`tel:${personal.phoneE164}`}
+              className="inline-flex items-center gap-2 text-sm text-[var(--color-fg-muted)] transition-colors hover:text-[var(--color-term-green)]"
+            >
+              <Phone size={14} /> {personal.phone}
             </a>
           </div>
 
