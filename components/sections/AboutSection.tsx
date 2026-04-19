@@ -5,7 +5,7 @@
  * inside a terminal window. Includes a small "file metadata" strip.
  */
 
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
 import { Calendar, MapPin, Terminal, Coffee } from "lucide-react";
 import { personal } from "@/lib/data";
 import { useLanguage } from "@/components/providers/LanguageProvider";
@@ -50,7 +50,7 @@ export function AboutSection() {
 
         <div className="grid gap-6 lg:grid-cols-12">
           {/* Bio card */}
-          <m.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -116,10 +116,10 @@ export function AboutSection() {
                 </div>
               </div>
             </TerminalWindow>
-          </m.div>
+          </motion.div>
 
           {/* Quick facts side panel */}
-          <m.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -155,7 +155,7 @@ export function AboutSection() {
                 </div>
               </div>
             </TerminalWindow>
-          </m.div>
+          </motion.div>
         </div>
       </div>
     </section>

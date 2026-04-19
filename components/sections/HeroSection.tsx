@@ -11,7 +11,7 @@
  */
 
 import { useEffect, useMemo, useState } from "react";
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowRight, Mail, Sparkles } from "lucide-react";
 import { GithubIcon } from "@/components/ui/BrandIcons";
 import { bootSequence, heroStats, personal } from "@/lib/data";
@@ -104,7 +104,7 @@ export function HeroSection() {
         {/* LEFT column — headline & CTAs */}
         <div className="lg:col-span-7">
           {/* Availability pill */}
-          <m.div
+          <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
@@ -119,10 +119,10 @@ export function HeroSection() {
                 ? "Nhận dự án mới · Q2/2026"
                 : "Taking new projects · Q2/2026"}
             </span>
-          </m.div>
+          </motion.div>
 
           {/* Breadcrumb / command prompt */}
-          <m.div
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.1, duration: 0.4 }}
@@ -131,12 +131,15 @@ export function HeroSection() {
             <span className="text-[var(--color-fg-dim)]">~/portfolio</span>
             <span className="text-[var(--color-term-green)]">$</span>
             <span>whoami --verbose</span>
-          </m.div>
+          </motion.div>
 
-          {/* Main title — kept as a plain <h1> (no motion) so it paints from
-              the SSR'd HTML immediately. It's the LCP element, and any JS-driven
-              fade-in pushes LCP behind hydration + animation. */}
-          <h1 className="mb-3 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          {/* Main title */}
+          <motion.h1
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15, duration: 0.6 }}
+            className="mb-3 text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+          >
             <span className="mr-3 text-[var(--color-term-green)] glow-green">
               &gt;
             </span>
@@ -148,10 +151,10 @@ export function HeroSection() {
               {personal.name.split(" ").slice(2).join(" ")}
             </span>
             <span className="ml-2 text-[var(--color-term-green)]">.</span>
-          </h1>
+          </motion.h1>
 
           {/* Typed role — changes every few seconds */}
-          <m.div
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.4 }}
@@ -160,20 +163,20 @@ export function HeroSection() {
             <span className="text-[var(--color-fg-dim)]">//</span>
             <span className="ml-2 text-[var(--color-term-amber)]">{typed}</span>
             <span className="ml-0.5 inline-block h-5 w-[2px] animate-pulse bg-[var(--color-term-green)]" />
-          </m.div>
+          </motion.div>
 
           {/* Tagline */}
-          <m.p
+          <motion.p
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
             className="mb-8 max-w-xl text-base leading-relaxed text-[var(--color-fg-muted)] sm:text-lg"
           >
             {t(personal.tagline)}
-          </m.p>
+          </motion.p>
 
           {/* CTAs */}
-          <m.div
+          <motion.div
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
@@ -206,10 +209,10 @@ export function HeroSection() {
             >
               <GithubIcon size={16} />
             </a>
-          </m.div>
+          </motion.div>
 
           {/* Stats — rendered as const declarations */}
-          <m.div
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
@@ -228,11 +231,11 @@ export function HeroSection() {
                 </div>
               </div>
             ))}
-          </m.div>
+          </motion.div>
         </div>
 
         {/* RIGHT column — faux code editor */}
-        <m.div
+        <motion.div
           initial={{ opacity: 0, x: 24 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
@@ -243,7 +246,7 @@ export function HeroSection() {
           {/* Boot log under the editor */}
           <div className="mt-6 space-y-1 font-mono text-[11px]">
             {bootSequence.map((line, i) => (
-              <m.div
+              <motion.div
                 key={line.label}
                 initial={{ opacity: 0, x: -8 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -269,10 +272,10 @@ export function HeroSection() {
                     className="text-[var(--color-term-cyan)]"
                   />
                 )}
-              </m.div>
+              </motion.div>
             ))}
           </div>
-        </m.div>
+        </motion.div>
       </div>
     </section>
   );

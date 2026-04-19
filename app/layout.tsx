@@ -4,7 +4,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { LanguageProvider } from "@/components/providers/LanguageProvider";
-import { MotionProvider } from "@/components/providers/MotionProvider";
 import { personal } from "@/lib/data";
 import { SITE_URL } from "@/lib/site";
 
@@ -266,9 +265,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-[var(--color-bg)] text-[var(--color-fg)] antialiased">
-        <LanguageProvider>
-          <MotionProvider>{children}</MotionProvider>
-        </LanguageProvider>
+        <LanguageProvider>{children}</LanguageProvider>
         <Analytics />
         <SpeedInsights />
       </body>

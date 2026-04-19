@@ -6,7 +6,7 @@
  * Featured projects render full-width at the top.
  */
 
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
 import { ExternalLink, Sparkles, Clock, Archive } from "lucide-react";
 import { GithubIcon } from "@/components/ui/BrandIcons";
 import { projects } from "@/lib/data";
@@ -80,7 +80,7 @@ export function ProjectsSection() {
         </div>
 
         {/* Footer hint */}
-        <m.div
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -99,7 +99,7 @@ export function ProjectsSection() {
           >
             github.com/huyphuong1994
           </a>
-        </m.div>
+        </motion.div>
       </div>
     </section>
   );
@@ -122,7 +122,7 @@ function ProjectCard({
   const StatusIcon = status.Icon;
 
   return (
-    <m.article
+    <motion.article
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
@@ -239,6 +239,6 @@ function ProjectCard({
           )}
         </div>
       </div>
-    </m.article>
+    </motion.article>
   );
 }

@@ -7,7 +7,7 @@
  * The design groups skills by category so visitors can scan quickly.
  */
 
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   Boxes,
   Brain,
@@ -76,7 +76,7 @@ export function SkillsSection() {
             const meta = skillCategoryMeta[category];
 
             return (
-              <m.div
+              <motion.div
                 key={category}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -111,13 +111,13 @@ export function SkillsSection() {
                     ))}
                   </ul>
                 </TerminalWindow>
-              </m.div>
+              </motion.div>
             );
           })}
         </div>
 
         {/* Bottom strip — AI emphasis */}
-        <m.div
+        <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
@@ -136,7 +136,7 @@ export function SkillsSection() {
               ? "Tôi dùng AI (Claude, Cursor, OpenAI API) như một đồng đội hằng ngày để thiết kế, review và ship code nhanh hơn — không phải để thay thế tư duy."
               : "I treat AI (Claude, Cursor, OpenAI API) as a daily teammate for design, review and shipping — not a replacement for thinking."}
           </p>
-        </m.div>
+        </motion.div>
       </div>
     </section>
   );
@@ -161,7 +161,7 @@ function SkillRow({ skill }: { skill: Skill }) {
       </div>
       {/* Proficiency bar */}
       <div className="ml-4 h-1 overflow-hidden rounded-full bg-[var(--color-border)]">
-        <m.div
+        <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: `${skill.level}%` }}
           viewport={{ once: true, margin: "-40px" }}

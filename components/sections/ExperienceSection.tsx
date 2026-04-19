@@ -6,7 +6,7 @@
  * bullet-point body. The left rail uses the same style as git log --graph.
  */
 
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
 import { Briefcase, Calendar } from "lucide-react";
 import { experiences, personal } from "@/lib/data";
 import { useLanguage } from "@/components/providers/LanguageProvider";
@@ -40,7 +40,7 @@ export function ExperienceSection() {
             {experiences.map((exp, idx) => {
               const isLast = idx === experiences.length - 1;
               return (
-                <m.div
+                <motion.div
                   key={exp.hash}
                   initial={{ opacity: 0, x: -12 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -126,7 +126,7 @@ export function ExperienceSection() {
                       ))}
                     </div>
                   </div>
-                </m.div>
+                </motion.div>
               );
             })}
 

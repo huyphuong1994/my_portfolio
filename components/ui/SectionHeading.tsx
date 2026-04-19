@@ -10,7 +10,7 @@
  * continuous terminal session.
  */
 
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export interface SectionHeadingProps {
@@ -35,7 +35,7 @@ export function SectionHeading({
   id,
 }: SectionHeadingProps) {
   return (
-    <m.div
+    <motion.div
       id={id}
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -61,6 +61,6 @@ export function SectionHeading({
           <span className="text-[var(--color-fg-faint)]">//</span> {description}
         </p>
       )}
-    </m.div>
+    </motion.div>
   );
 }
