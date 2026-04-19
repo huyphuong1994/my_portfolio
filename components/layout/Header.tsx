@@ -11,7 +11,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { navItems, personal } from "@/lib/data";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { LanguageToggle } from "@/components/ui/LanguageToggle";
@@ -106,7 +106,7 @@ export function Header() {
       {/* Mobile drawer */}
       <AnimatePresence>
         {open && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
@@ -139,7 +139,7 @@ export function Header() {
                 <LanguageToggle />
               </div>
             </nav>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </header>

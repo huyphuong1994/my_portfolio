@@ -8,7 +8,7 @@
  */
 
 import { useState, type ComponentType, type FormEvent } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Check, Mail, Phone, Send, AlertCircle } from "lucide-react";
 import { GithubIcon } from "@/components/ui/BrandIcons";
 import { personal } from "@/lib/data";
@@ -76,7 +76,7 @@ export function ContactSection() {
 
         <div className="grid gap-6 lg:grid-cols-5">
           {/* LEFT — contact info card */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -154,10 +154,10 @@ export function ContactSection() {
                 </div>
               </div>
             </TerminalWindow>
-          </motion.div>
+          </m.div>
 
           {/* RIGHT — contact form */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
@@ -263,7 +263,7 @@ export function ContactSection() {
                 </div>
               </form>
             </TerminalWindow>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>
