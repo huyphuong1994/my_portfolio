@@ -36,6 +36,15 @@ export const personal = {
   github: "https://github.com/huyphuong1994",
   githubHandle: "huyphuong1994",
   available: true,
+  // Postal address — dùng cho JSON-LD Person/ProfessionalService.
+  // Giữ ở mức quận/phường là đủ để Google chấp nhận, không cần lộ địa chỉ nhà.
+  address: {
+    streetAddress: "Phường Cầu Giấy",
+    addressLocality: "Quận Cầu Giấy",
+    addressRegion: "Hà Nội",
+    postalCode: "100000",
+    addressCountry: "VN",
+  },
 };
 
 /* ============================================================

@@ -136,6 +136,8 @@ export const viewport: Viewport = {
  * and what I offer. Two nodes referenced via @id keep the relationship
  * explicit (provider <-> services).
  */
+const postalAddress = { "@type": "PostalAddress", ...personal.address };
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -151,11 +153,7 @@ const jsonLd = {
       email: `mailto:${personal.email}`,
       telephone: personal.phoneE164,
       sameAs: [personal.github],
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Hà Nội",
-        addressCountry: "VN",
-      },
+      address: postalAddress,
       knowsLanguage: ["vi", "en"],
       knowsAbout: [
         "Web Development",
@@ -206,11 +204,7 @@ const jsonLd = {
       telephone: personal.phoneE164,
       priceRange: "$$",
       image: `${SITE_URL}/opengraph-image`,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Hà Nội",
-        addressCountry: "VN",
-      },
+      address: postalAddress,
     },
     {
       "@type": "ProfessionalService",
@@ -226,11 +220,7 @@ const jsonLd = {
       telephone: personal.phoneE164,
       priceRange: "$$",
       image: `${SITE_URL}/opengraph-image`,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Hà Nội",
-        addressCountry: "VN",
-      },
+      address: postalAddress,
     },
     {
       "@type": "ProfessionalService",
@@ -246,11 +236,7 @@ const jsonLd = {
       telephone: personal.phoneE164,
       priceRange: "$$",
       image: `${SITE_URL}/opengraph-image`,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Hà Nội",
-        addressCountry: "VN",
-      },
+      address: postalAddress,
     },
     {
       "@type": "WebSite",
