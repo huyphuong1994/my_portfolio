@@ -203,6 +203,14 @@ const jsonLd = {
       availableLanguage: ["vi", "en"],
       serviceType: "Web Development",
       url: `${SITE_URL}#contact`,
+      telephone: personal.phoneE164,
+      priceRange: "$$",
+      image: `${SITE_URL}/opengraph-image`,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Hà Nội",
+        addressCountry: "VN",
+      },
     },
     {
       "@type": "ProfessionalService",
@@ -215,6 +223,14 @@ const jsonLd = {
       availableLanguage: ["vi", "en"],
       serviceType: "Software Development",
       url: `${SITE_URL}#contact`,
+      telephone: personal.phoneE164,
+      priceRange: "$$",
+      image: `${SITE_URL}/opengraph-image`,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Hà Nội",
+        addressCountry: "VN",
+      },
     },
     {
       "@type": "ProfessionalService",
@@ -227,6 +243,14 @@ const jsonLd = {
       availableLanguage: ["vi", "en"],
       serviceType: "AI Integration",
       url: `${SITE_URL}#contact`,
+      telephone: personal.phoneE164,
+      priceRange: "$$",
+      image: `${SITE_URL}/opengraph-image`,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Hà Nội",
+        addressCountry: "VN",
+      },
     },
     {
       "@type": "WebSite",
