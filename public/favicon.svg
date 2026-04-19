@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagon -->
+  <polygon points="200,20 356,110 356,290 200,380 44,290 44,110"
+    fill="#0F172A" stroke="#06B6D4" stroke-width="8"/>
+
+  <!-- HP letters (white) -->
+  <g fill="#F8FAFC">
+    <!-- H -->
+    <rect x="101" y="130" width="22" height="140"/>
+    <rect x="169" y="130" width="22" height="140"/>
+    <rect x="123" y="189" width="46" height="22"/>
+    <!-- P -->
+    <rect x="209" y="130" width="22" height="140"/>
+    <rect x="231" y="130" width="68" height="22"/>
+    <rect x="277" y="130" width="22" height="70"/>
+    <rect x="231" y="178" width="46" height="22"/>
+  </g>
+
+  <!-- P bowl interior (cyan accent) -->
+  <rect x="231" y="152" width="46" height="26" fill="#06B6D4"/>
+</svg>
