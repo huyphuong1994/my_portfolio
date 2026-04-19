@@ -1,0 +1,82 @@
+# Đào Huy Phương — Full-stack Developer & Freelancer
+
+> Lập trình viên Full-stack với 7+ năm kinh nghiệm, nhận làm website và phần mềm freelance theo yêu cầu cho doanh nghiệp, startup và cá nhân tại Việt Nam và quốc tế.
+
+## Profile
+
+- **Tên**: Đào Huy Phương (Dao Huy Phuong)
+- **Vai trò**: Senior Full-stack Developer / Freelancer
+- **Địa điểm**: Hà Nội, Việt Nam (làm việc remote toàn cầu)
+- **Ngôn ngữ**: Tiếng Việt, English
+- **Kinh nghiệm**: 7+ năm
+- **Trạng thái**: Đang nhận dự án freelance
+- **Email**: huyphuongk57ktb@gmail.com
+- **Phone / Zalo**: 0395765120 (+84 395 765 120)
+- **GitHub**: https://github.com/huyphuong1994
+- **Website**: https://huyphuong.dev
+
+## Dịch vụ freelance / Services Offered
+
+### Phát triển Website (Web Development)
+- Thiết kế và phát triển landing page, web bán hàng, web doanh nghiệp.
+- Hệ thống CMS, web admin quản trị nội bộ.
+- Tối ưu SEO, Core Web Vitals, hiệu năng.
+- Responsive, đa ngôn ngữ, bảo mật chuẩn OWASP.
+
+### Phát triển Phần mềm (Software Development)
+- Xây dựng SaaS, ứng dụng web phức tạp.
+- Microservices, REST API, GraphQL API.
+- Migration hệ thống legacy.
+- Refactor và tối ưu codebase cũ.
+
+### Tích hợp AI (AI Integration)
+- Chatbot, AI agent với OpenAI / Claude / Gemini.
+- Automation workflow, intelligent search.
+- Content generation, AI-assisted code review.
+- Prompt engineering chuyên nghiệp.
+
+### Tư vấn kỹ thuật (Technical Consulting)
+- Code review, kiến trúc hệ thống.
+- DevOps, CI/CD, deployment trên Vercel/AWS/GCP.
+- Performance audit, security audit.
+
+## Tech Stack
+
+- **Backend**: Golang, Python (FastAPI/Django), Node.js, PHP/Laravel
+- **Frontend**: Next.js, React, Vue.js, Nuxt.js, TypeScript, Tailwind CSS
+- **Database**: PostgreSQL, MySQL, Redis, MongoDB
+- **DevOps**: Docker, Kubernetes, GitHub Actions, Linux, Nginx
+- **AI/LLM**: OpenAI API, Claude API, Cursor, prompt engineering
+- **Cloud**: Vercel, AWS, GCP, Cloudflare
+
+## Featured Projects
+
+- **Golf Platform** (https://vngolf-portal.vnpay.vn) — Hệ thống CMS quản lý sân golf VNPAY, đang phục vụ Chí Linh, Sam Tuyền Lâm, Vinpearl Golf và nhiều sân khác. Stack: React, Golang, MySQL, Redis, Docker.
+- **Wedding Platform** (https://wixio-fe.vercel.app) — App tạo thiệp mời cưới online. Stack: Vue.js, Next.js, Golang, MySQL.
+- **Grid Bot Trading** — Desktop bot giao dịch crypto dạng lưới có tích hợp AI phân tích thị trường. Stack: Python, Electron, SQLite, OpenAI.
+- **AI Sub Video** — AI agent tự động thêm phụ đề và lồng tiếng cho video chuẩn Netflix. Stack: Python, AI, Docker.
+
+## Kinh nghiệm làm việc
+
+- **2022 — Hiện tại**: Senior Full-stack Developer tại Caro Technology Solutions. Key member xây dựng nền tảng quản lý sân golf VNPAY.
+- **2020 — 2022**: Full-stack Developer tại VCCorp. Xây dựng e-commerce B2B với 1M+ SKU.
+- **2018 — 2020**: Junior Web Developer tại PADITECH Việt Nam. Phát triển 10+ website khách hàng.
+
+## Cách thuê / How to Hire
+
+1. Truy cập https://huyphuong.dev#contact và gửi tin nhắn qua form.
+2. Hoặc email trực tiếp: huyphuongk57ktb@gmail.com
+3. Hoặc gọi/Zalo: 0395765120
+4. Phản hồi trong vòng 24h làm việc.
+
+## Phù hợp cho ai
+
+- Doanh nghiệp cần xây dựng website, phần mềm quản trị, hệ thống nội bộ.
+- Startup cần MVP nhanh, kiến trúc mở rộng tốt.
+- Cá nhân cần landing page, portfolio, blog chuyên nghiệp.
+- Công ty muốn tích hợp AI vào sản phẩm có sẵn.
+- Khách hàng quốc tế tìm developer Việt Nam chất lượng cao, giá hợp lý.
+
+## Keywords
+
+freelancer Việt Nam, lập trình viên freelance, thuê developer fullstack, nhận làm website, nhận làm phần mềm, freelance Next.js developer, freelance Golang developer, hire full-stack developer Vietnam, remote developer, AI integration freelancer, web development Vietnam.
