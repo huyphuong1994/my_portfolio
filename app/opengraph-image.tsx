@@ -236,7 +236,15 @@ export default async function Image() {
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ color: C.green }}>●</span>
+            <div
+              style={{
+                width: 12,
+                height: 12,
+                borderRadius: 6,
+                backgroundColor: C.green,
+                display: "flex",
+              }}
+            />
             <span style={{ color: C.fg }}>{domain}</span>
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
